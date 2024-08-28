@@ -1,0 +1,605 @@
+fileFormatVersion: 2
+guid: 12a2817cdf458ad4f9097649806d838d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 325
+        width: 24
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a467ca85225402d47baf4127d94f81db
+      internalID: -853098506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 325
+        width: 25
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bde7c1c4f0e48b449cc3266c87922e0
+      internalID: -203745916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_2
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 282
+        width: 25
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f6ea8b600680c84dab2b7d8e92f3fa9
+      internalID: 863705252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_3
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 282
+        width: 26
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73558c927ab6b1b438c7de0ca5401aa3
+      internalID: -2139135319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_4
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 282
+        width: 24
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a440ae603ac68540acad2e2201f5e40
+      internalID: 1915294136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_5
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 282
+        width: 24
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a2f4f305a186fe469e58a346b8156e7
+      internalID: -309024283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_6
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 282
+        width: 27
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db19076ac386c541be2b224cf441e15
+      internalID: 207433293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_7
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 241
+        width: 24
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ccf6a5f912c3b543b646958d1857e2a
+      internalID: 966535190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_8
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 241
+        width: 25
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e73babc876cd54a48a7c494e93773aec
+      internalID: -1007954344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_9
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 198
+        width: 25
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b567dbc977e38364eb7c7313a15a4f81
+      internalID: 1580346212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_10
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 198
+        width: 26
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc7e39ed7c64b0419860d19a23e9c32
+      internalID: 591977344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_11
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 198
+        width: 24
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56493b30323ae5b4da7cfcbdfe31dd77
+      internalID: -1697401948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_12
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 198
+        width: 24
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91fbf36d7e9118a4ab7537299dc8b4b5
+      internalID: 944753625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_13
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 198
+        width: 27
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6af4906301d2db4d9c37f72d499ff2d
+      internalID: -1986977836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_14
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 155
+        width: 24
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8130bcbcfcb166b44b8fe27220a21469
+      internalID: 511391793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_15
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 155
+        width: 25
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f3af1700ed0d949a9a7ed49b63b298
+      internalID: -1621886374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_16
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 112
+        width: 25
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c8df8c172bb15740923c8a4955e1f02
+      internalID: 1095679433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_17
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 112
+        width: 26
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b36b298c8cd2f51449f2ae2fb4257aa0
+      internalID: 787820824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_18
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 112
+        width: 24
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb090f40781c1a14f843e9d9f62f2aea
+      internalID: 1022608192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_19
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 112
+        width: 24
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05d33b128feaf742b95b089b56c04e6
+      internalID: 1787480133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_20
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 112
+        width: 27
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e6284626a70fa64395a41c6c97013a4
+      internalID: 1341145949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_0: -853098506
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_1: -203745916
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_10: 591977344
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_11: -1697401948
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_12: 944753625
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_13: -1986977836
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_14: 511391793
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_15: -1621886374
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_16: 1095679433
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_17: 787820824
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_18: 1022608192
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_19: 1787480133
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_2: 863705252
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_20: 1341145949
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_21: 112055485
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_22: -1971113350
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_23: 1304877125
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_24: 1132728329
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_25: -787783890
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_26: 728342098
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_27: 27286612
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_28: 1516163542
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_29: -1695769274
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_3: -2139135319
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_30: 1734188678
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_31: -1371224264
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_32: 1254544021
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_33: 771457437
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_34: -29704334
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_35: -148190389
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_36: -387648704
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_4: 1915294136
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_5: -309024283
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_6: 207433293
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_7: 966535190
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_8: -1007954344
+      Game Boy Advance - Kirby Nightmare in Dream Land - Throw Kirby(1)_9: 1580346212
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
