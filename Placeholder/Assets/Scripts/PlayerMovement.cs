@@ -9,10 +9,11 @@ namespace Assets.Scripts
         private float horizontal;
         private float speed = 6f;
         private float sprintSpeed = 9f;
-        public float Deafaultjumpingpower = 8f;
+        public float Deafaultjumpingpower = 6f;
         public float jumpingpower;
         private bool isFacingRight = true;
         public Animator animator;
+       
 
         [SerializeField] private Rigidbody2D rb;
         [SerializeField] private Transform groundCheck;
@@ -63,12 +64,13 @@ namespace Assets.Scripts
             {
                 animator.SetBool("IsRunning", true);
                 animator.SetFloat("Speed", 2);
-
+               
             }
             else
             {
                 animator.SetBool("IsRunning", false) ;
                 animator.SetFloat("Speed", Mathf.Abs(horizontal));
+             
             }
         
 
@@ -78,13 +80,20 @@ namespace Assets.Scripts
                 animator.SetBool("IsRunning", true);
                 animator.SetFloat("Speed", 0); // Set speed to 0 when standing still but holding sprint key
             }
-                else if (isSprinting && isMoving)
+                else if (isSprinting && isMoving && IsGrounded())
                  {
 
-                animator.SetBool("IsRunning", true);
-                animator.SetFloat("Speed", 2);
+                 animator.SetBool("IsRunning", true);
+                 animator.SetFloat("Speed", 2);
+                 //rb.velocity = Vector2.zero;
                  }
-                 else if(isMoving)
+                 else if (isSprinting && isMoving && !IsGrounded())
+                 {
+
+                  animator.SetBool("IsRunning", true);
+                  animator.SetFloat("Speed", 2);               
+                 }
+            else if(isMoving)
                 {
                 animator.SetBool("IsRunning", false);
                 animator.SetFloat("Speed", Mathf.Abs(horizontal));
@@ -104,14 +113,14 @@ namespace Assets.Scripts
             }
             else 
             {
-                animator.SetBool("IsThrowing", false);
+                animator.SetBool("IsThrowing", false     );
             }
 
 
 
             bool grounded = IsGrounded();
 
-            if (Input.GetButtonDown("Jump") && grounded)
+            if (Input.GetButtonDown("Jump") && IsGrounded())
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpingpower);
                 animator.SetBool("IsJumping", true);
@@ -125,7 +134,21 @@ namespace Assets.Scripts
 
 
             }
-            else if (!grounded)
+           else if (Input.GetButtonDown("Jump") && isSprinting && IsGrounded())
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpingpower);
+                animator.SetBool("IsJumping", true);
+                animator.SetBool("IsFalling", false);
+
+
+                if (jumpBoostActive)
+                {
+                    Resetjumpingpower();
+                }
+
+
+            }
+            else if (!IsGrounded())
             {
                 if (rb.velocity.y < 0)
                 {
@@ -169,8 +192,18 @@ namespace Assets.Scripts
 
         private void FixedUpdate()
         {
-            float currentSpeed = isSprinting ? sprintSpeed : speed;
-            rb.velocity = new Vector2(horizontal * currentSpeed, rb.velocity.y);
+
+            if (isThrowing)
+            {
+                // Stop horizontal movement if throwing
+                rb.velocity = new Vector2(0, rb.velocity.y);
+            }
+            else
+            {
+                // Apply movement based on sprinting status
+                float currentSpeed = isSprinting ? sprintSpeed : speed;
+                rb.velocity = new Vector2(horizontal * currentSpeed, rb.velocity.y);
+            }
         }
 
         private void Flip()
