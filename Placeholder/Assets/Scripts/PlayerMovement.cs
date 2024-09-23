@@ -13,6 +13,7 @@ namespace Assets.Scripts
         public float jumpingpower;
         private bool isFacingRight = true;
         public Animator animator;
+        private PickupScript Pickup;
        
 
         [SerializeField] private Rigidbody2D rb;
@@ -21,13 +22,15 @@ namespace Assets.Scripts
 
         private bool isSprinting = false;
         private bool jumpBoostActive = false;
-        private bool isThrowing = false;
+        public bool isThrowing = false;
 
-
+  
 
         void Start()
         {
             jumpingpower = Deafaultjumpingpower; //Inital Jump strength
+            Pickup = gameObject.GetComponent<PickupScript>();
+            Pickup.pickupPosition = new Vector2 (+.7f, 0);
         }
 
 
@@ -41,7 +44,8 @@ namespace Assets.Scripts
            horizontal = Input.GetAxisRaw("Horizontal");
            animator.SetFloat("Speed", Mathf.Abs(horizontal));
 
-
+            
+          
 
             bool isMoving = Mathf.Abs(horizontal) > 0.01f;
             isSprinting = Input.GetKey(KeyCode.LeftShift);
@@ -80,17 +84,10 @@ namespace Assets.Scripts
                 animator.SetBool("IsRunning", true);
                 animator.SetFloat("Speed", 0); // Set speed to 0 when standing still but holding sprint key
             }
-                else if (isSprinting && isMoving && IsGrounded())
+                 else if (isSprinting && isMoving)
                  {
-
-                 animator.SetBool("IsRunning", true);
-                 animator.SetFloat("Speed", 2);
-                 //rb.velocity = Vector2.zero;
-                 }
-                 else if (isSprinting && isMoving && !IsGrounded())
-                 {
-
-                  animator.SetBool("IsRunning", true);
+             
+                animator.SetBool("IsRunning", true);
                   animator.SetFloat("Speed", 2);               
                  }
             else if(isMoving)
@@ -109,11 +106,12 @@ namespace Assets.Scripts
 
             if (isThrowing)
             {
-                animator.SetBool("IsThrowing", true);
+                animator.SetBool("IsThrowing", true);               
+                isThrowing = false;
             }
-            else 
+            else if (!isThrowing)
             {
-                animator.SetBool("IsThrowing", false     );
+                animator.SetBool("IsThrowing", false);
             }
 
 
@@ -195,12 +193,12 @@ namespace Assets.Scripts
 
             if (isThrowing)
             {
-                // Stop horizontal movement if throwing
+               
                 rb.velocity = new Vector2(0, rb.velocity.y);
             }
             else
             {
-                // Apply movement based on sprinting status
+               
                 float currentSpeed = isSprinting ? sprintSpeed : speed;
                 rb.velocity = new Vector2(horizontal * currentSpeed, rb.velocity.y);
             }
