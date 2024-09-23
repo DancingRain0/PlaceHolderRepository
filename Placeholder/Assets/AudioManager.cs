@@ -15,7 +15,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip Pickup;
     public AudioClip MainMenu;
 
-    private void Start()
+    public void Start()
     {
         musicSource.clip = BackGround;
         musicSource.Play();
@@ -24,5 +24,21 @@ public class AudioManager : MonoBehaviour
     public void PlaySFX(AudioClip clip)
     {
         SFXClip.PlayOneShot(clip);
+    }
+
+    public void StopMusic()
+    {
+        if (musicSource.isPlaying)
+        {
+            musicSource.Stop();
+        }
+    }
+    public void PlayMusic(AudioClip clip)
+    {
+        if (clip != null)
+        {
+            musicSource.clip = clip;
+            musicSource.Play();
+        }
     }
 }

@@ -1,17 +1,19 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
-using Unity.VisualScripting;
 
 public class GameOver : MonoBehaviour
 {
     public TMP_Text pointsText; // Use TMP_Text for TextMeshPro
     public GameObject gameOverPanel;
+    private PlayerHealth playerHealth;
+    private AudioManager audioManager; // Reference to the AudioManager
 
     private void Start()
     {
         // Ensure the panel is inactive at the start
         gameOverPanel.SetActive(false);
+        audioManager = FindObjectOfType<AudioManager>(); // Get the AudioManager
     }
 
     public void Setup(int score)
@@ -19,7 +21,12 @@ public class GameOver : MonoBehaviour
         Debug.Log("Activating Game Over panel"); // Check if this appears
         gameOverPanel.SetActive(true);
         pointsText.text = "Gold: " + score.ToString();
-        Time.timeScale = 0;
+
+        if (audioManager != null)
+        {
+            audioManager.StopMusic();
+            audioManager.PlayMusic(audioManager.MainMenu); // Play the game over music
+        }
     }
 
     public void RestartGame()
